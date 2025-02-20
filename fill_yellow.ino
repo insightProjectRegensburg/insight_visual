@@ -23,9 +23,6 @@ void loop() {
 
   if (val == HIGH) {
 
-//    digitalWrite(LED_PIN, HIGH);
-
-
     if (lastValue == 0) {
 
       hsv.hue = 18;  //yellow
@@ -42,11 +39,9 @@ void loop() {
     }
     lastValue = 1;
   } else {
-   // digitalWrite(LED_PIN, LOW);
     lastValue = 0; 
     FastLED.clear();
     FastLED.show();
-    //delay(5000);
   }
 }
 

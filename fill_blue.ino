@@ -14,7 +14,7 @@ CRGB ledsWindow[NUM_LEDS_WINDOW];
 void setup() {
   FastLED.addLeds<NEOPIXEL, LED_PIN_WINDOW>(ledsWindow, NUM_LEDS_WINDOW);
   pinMode(LED_PIN, OUTPUT);
-  pinMode(sensor, INPUT);  // PIR motion sensor is determined is an input here.
+  pinMode(sensor, INPUT);  
   Serial.begin(9600);
 }
 
